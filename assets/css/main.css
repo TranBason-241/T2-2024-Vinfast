@@ -1,0 +1,434 @@
+@font-face {
+  font-family: "Neue Einstellung";
+  src: url("../fonts/NeueEinstellung-Black.eot");
+  src: url("../fonts/NeueEinstellung-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueEinstellung-Black.woff2") format("woff2"), url("../fonts/NeueEinstellung-Black.woff") format("woff"), url("../fonts/NeueEinstellung-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Neue Einstellung";
+  src: url("../fonts/NeueEinstellung-Light.eot");
+  src: url("../fonts/NeueEinstellung-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueEinstellung-Light.woff2") format("woff2"), url("../fonts/NeueEinstellung-Light.woff") format("woff"), url("../fonts/NeueEinstellung-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Neue Einstellung";
+  src: url("../fonts/NeueEinstellung-Regular.eot");
+  src: url("../fonts/NeueEinstellung-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueEinstellung-Regular.woff2") format("woff2"), url("../fonts/NeueEinstellung-Regular.woff") format("woff"), url("../fonts/NeueEinstellung-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Neue Einstellung";
+  src: url("../fonts/NeueEinstellung-ExtraBold.eot");
+  src: url("../fonts/NeueEinstellung-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueEinstellung-ExtraBold.woff2") format("woff2"), url("../fonts/NeueEinstellung-ExtraBold.woff") format("woff"), url("../fonts/NeueEinstellung-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Neue Einstellung";
+  src: url("../fonts/NeueEinstellung-XLight.eot");
+  src: url("../fonts/NeueEinstellung-XLight.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueEinstellung-XLight.woff2") format("woff2"), url("../fonts/NeueEinstellung-XLight.woff") format("woff"), url("../fonts/NeueEinstellung-XLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Neue Einstellung";
+  src: url("../fonts/NeueEinstellung-Bold.eot");
+  src: url("../fonts/NeueEinstellung-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueEinstellung-Bold.woff2") format("woff2"), url("../fonts/NeueEinstellung-Bold.woff") format("woff"), url("../fonts/NeueEinstellung-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Neue Einstellung";
+  src: url("../fonts/NeueEinstellung-Medium.eot");
+  src: url("../fonts/NeueEinstellung-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueEinstellung-Medium.woff2") format("woff2"), url("../fonts/NeueEinstellung-Medium.woff") format("woff"), url("../fonts/NeueEinstellung-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-GilroySemiBold.eot");
+  src: url("../fonts/SVN-GilroySemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SVN-GilroySemiBold.woff2") format("woff2"), url("../fonts/SVN-GilroySemiBold.woff") format("woff"), url("../fonts/SVN-GilroySemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "SVN-Gilroy XBold";
+  src: url("../fonts/SVN-GilroyXBold.eot");
+  src: url("../fonts/SVN-GilroyXBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SVN-GilroyXBold.woff2") format("woff2"), url("../fonts/SVN-GilroyXBold.woff") format("woff"), url("../fonts/SVN-GilroyXBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Neue Einstellung";
+  src: url("../fonts/NeueEinstellung-SemiBold.eot");
+  src: url("../fonts/NeueEinstellung-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueEinstellung-SemiBold.woff2") format("woff2"), url("../fonts/NeueEinstellung-SemiBold.woff") format("woff"), url("../fonts/NeueEinstellung-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Neue Einstellung";
+  src: url("../fonts/NeueEinstellung-Thin.eot");
+  src: url("../fonts/NeueEinstellung-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueEinstellung-Thin.woff2") format("woff2"), url("../fonts/NeueEinstellung-Thin.woff") format("woff"), url("../fonts/NeueEinstellung-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap; }
+.my_container {
+  background-color: white;
+  overflow: hidden; }
+
+.img {
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+  display: block; }
+
+.text_content {
+  width: 700px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 18px;
+  position: relative;
+  font-family: "K2D";
+  font-weight: normal;
+  font-style: normal; }
+
+.group_image {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto; }
+  .group_image img {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .group_image img:first-child {
+    position: initial; }
+
+.author {
+  font-size: 18px;
+  font-family: "San Francisco Text";
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 0px; }
+  .author p {
+    text-align: center;
+    margin-bottom: 0; }
+    .author p span {
+      font-weight: bold; }
+
+.home {
+  background-image: url(../images/bg-4.jpg);
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  background-position: center top 13%;
+  padding-bottom: 120px;
+  background-position: center top; }
+
+.voucher {
+  background-image: url(../images/bg-4.jpg);
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  background-position: center top 13%;
+  padding-bottom: 120px;
+  background-position: center top; }
+
+.title-container {
+  margin: 0 auto;
+  font-family: "SVN-Gilroy";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;
+  color: #6b9ee5;
+  text-align: center;
+  margin-top: -8%;
+  margin-bottom: 40px; }
+  .title-container p {
+    margin-bottom: 0; }
+  .title-container .title {
+    font-family: "SVN-Gilroy XBold";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 48px;
+    color: white;
+    margin-top: -10px; }
+
+.img-1 {
+  margin-top: -12%;
+  padding-right: 20px; }
+
+.img-11 {
+  margin-top: -12%;
+  padding-right: 20px; }
+
+.group_img_2 {
+  margin-top: 7%; }
+
+.t-bold-small,
+.t-bold-medium,
+.t-bold-big {
+  font-family: "Neue Einstellung";
+  font-weight: bold;
+  font-style: normal; }
+
+.t-small {
+  font-family: "Neue Einstellung";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px; }
+
+.t-big {
+  font-family: "Neue Einstellung";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px; }
+
+.t-bold-small {
+  font-size: 20px; }
+
+.t-bold-medium {
+  font-size: 22px; }
+
+.t-bold-big {
+  font-size: 24px; }
+
+.t-bold-large {
+  font-size: 40px;
+  font-family: "SVN-Gilroy XBold";
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1 !important; }
+
+.t-blue {
+  color: #00337b; }
+
+.line {
+  border-top: 1px dashed #e0e5ed;
+  width: 80%;
+  margin-bottom: 10px; }
+
+.page {
+  transition: all 0.5s;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: none; }
+
+.page.active-page {
+  opacity: 1;
+  display: block; }
+
+.d-none {
+  display: none !important; }
+
+.home-voucher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+  margin: 0 auto;
+  width: 340px;
+  background-image: url(../images/bg-3.png);
+  margin-bottom: 40px;
+  background-repeat: no-repeat;
+  padding-bottom: 5px; }
+  .home-voucher .home-voucher-des {
+    font-family: "Neue Einstellung";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.2 !important;
+    margin-bottom: 0; }
+  .home-voucher .home-voucher-num {
+    font-family: "SVN-Gilroy XBold";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 64px;
+    line-height: 1.2 !important;
+    margin-bottom: 0; }
+
+.hone-voucher-container {
+  color: #00337b;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; }
+  .hone-voucher-container p {
+    margin-bottom: 10px; }
+
+.home-voucher-item {
+  width: 433px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px 0px 0; }
+
+.item-temp {
+  position: relative;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -61.08%, rgba(255, 255, 255, 0.425) 170.99%);
+  box-shadow: 0px 0px 11.9px 0px rgba(255, 255, 255, 0.4) inset;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.705);
+  padding: 15px 10px 20px 10px; }
+
+.b-top {
+  width: 100%;
+  height: 1.5px;
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.856);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.644) 0%, rgba(255, 255, 255, 0) 80%); }
+
+.b-left {
+  position: absolute;
+  height: 100%;
+  width: 1.5px;
+  background: rgba(255, 255, 255, 0.856);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.644) 0%, rgba(255, 255, 255, 0) 90%);
+  left: -1px; }
+
+.b-right {
+  position: absolute;
+  height: 100%;
+  width: 1.5px;
+  background: rgba(255, 255, 255, 0.856);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.644) 0%, rgba(255, 255, 255, 0) 90%);
+  right: 1px; }
+
+.row-info {
+  display: flex;
+  gap: 10px;
+  align-items: center; }
+
+.nav-container {
+  z-index: 10;
+  position: fixed;
+  top: 30%;
+  width: fit-content;
+  display: flex;
+  font-family: "Neue Einstellung";
+  font-weight: 500;
+  font-style: normal;
+  gap: 25px;
+  flex-direction: column; }
+  .nav-container .usage {
+    background-color: #d5dbe3;
+    border-radius: 0px !important;
+    border-top-right-radius: 16px !important;
+    border-bottom-right-radius: 16px !important;
+    border: 2px solid white;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px; }
+    .nav-container .usage p {
+      font-size: 17px;
+      margin-bottom: 0; }
+  .nav-container .item-container {
+    font-family: "Neue Einstellung";
+    font-weight: bold;
+    font-style: normal;
+    padding: 20px 0;
+    border-radius: 16px;
+    background-image: url(../images/bg-2.png);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    gap: 50px; }
+    .nav-container .item-container .item-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer; }
+      .nav-container .item-container .item-nav p {
+        margin: 0 auto;
+        font-size: 18px;
+        text-align: center;
+        color: #b1b1b1; }
+  .nav-container .item-container .img-active {
+    display: none; }
+  .nav-container .item-container .item-nav.active-nav p {
+    color: #00337b; }
+  .nav-container .item-container .item-nav.active-nav .img-none {
+    display: none; }
+  .nav-container .item-container .item-nav.active-nav .img-active {
+    display: block; }
+
+.contact-container {
+  margin: 0 auto;
+  margin-top: 15px;
+  color: #00337b;
+  font-family: "Neue Einstellung";
+  font-weight: 600;
+  font-style: normal; }
+  .contact-container p {
+    margin-bottom: 0;
+    text-align: center; }
+  .contact-container .info {
+    font-size: 20px; }
+  .contact-container .hot-line-container {
+    width: fit-content;
+    padding: 12px 20px;
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-top: 10px; }
+    .contact-container .hot-line-container p {
+      font-size: 24px;
+      font-family: "Neue Einstellung";
+      font-weight: bold;
+      font-style: normal; }
+    .contact-container .hot-line-container span {
+      font-size: 20px; }
+
+.dieu-kien {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px; }
+  .dieu-kien .ap-dung {
+    background-image: url("../images/bg-5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px 5px;
+    border-radius: 14px;
+    min-width: 100px;
+    text-align: center; }
+  .dieu-kien .dk-content {
+    line-height: 1.2 !important;
+    margin-bottom: 0; }
+
+.voucher .title {
+  font-size: 24px;
+  color: white;
+  font-family: "Neue Einstellung";
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -7%; }
+.voucher .slide-container {
+  padding: 0 150px 100px 150px;
+  text-align: center; }
+
+.my-swiper-btn-container {
+  position: relative;
+  width: 150px;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=main.css.map */
