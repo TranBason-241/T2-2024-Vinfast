@@ -13,6 +13,12 @@
     <link type="text/css" rel="stylesheet" href="assets/css/animate-v4.min.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
     <!-- End stylesheet -->
 
@@ -163,6 +169,35 @@
         <div class="wrapper-content">
           <div id="overlay"></div>
           <div class="my_container">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Launch demo modal</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <img src="assets/images/btn-close.png" alt="a" class="img-close close" data-dismiss="modal" aria-label="Close" />
+                  </div>
+                  <div class="modal-body">
+                    <div class="slide-detail-container">
+                      <div class="title-car-container">
+                        <p class="car-name">VF 9</p>
+                      </div>
+                      <div class="cover-container">
+                        <img src="assets/images/d-car-1.png" alt="" class="img d-car" />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ex ipsam magnam nam corporis cumque?</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+
             <div class="nav-container">
               <div class="usage item-temp">
                 <p>Chọn dòng xe</p>
@@ -299,7 +334,24 @@
                 được giảm đến 9%. Nếu trả góp, hãng đưa cam kết lãi suất cố <br />
                 định trong 8 năm, áp dụng từ tháng 3.
               </p>
-              <div class="slide-container">
+              <div class="slide-container main-slide">
+                <div class="nav-main-slide container">
+                  <div class="nav-slide-item item-temp">
+                    <p>VF 5 Plus</p>
+                  </div>
+                  <div class="nav-slide-item item-temp main-slide-active-nav-item">
+                    <p>VF 5 Plus</p>
+                  </div>
+                  <div class="nav-slide-item item-temp">
+                    <p>VF 5 Plus</p>
+                  </div>
+                  <div class="nav-slide-item item-temp">
+                    <p>VF 5 Plus</p>
+                  </div>
+                  <div class="nav-slide-item item-temp">
+                    <p>VF 5 Plus</p>
+                  </div>
+                </div>
                 <div class="swiper swiper-1">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -341,10 +393,11 @@
                   </div>
                 </div>
                 <div class="my-swiper-btn-container">
-                  <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
                 </div>
               </div>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Launch demo modal</button>
             </div>
           </div>
         </div>
@@ -367,6 +420,17 @@
     <script type="text/javascript" src="assets/js/aos.js"></script>
     <script type="text/javascript" src="assets/js/imagesStatus.min.js"></script>
     <script type="text/javascript" src="assets/js/swiper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="assets/js/main.min.js"></script>
     <script>
       AOS.init({ offset: 120, duration: 3000 });
