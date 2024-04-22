@@ -128,7 +128,7 @@
 .home {
   background-image: url(../images/bg-4.jpg);
   background-repeat: no-repeat;
-  padding-top: 120px;
+  padding-top: 110px;
   background-position: center top 13%;
   padding-bottom: 120px;
   background-position: center top; }
@@ -166,28 +166,37 @@
   padding-right: 20px; }
 
 .img-11 {
-  margin-top: -12%;
-  padding-right: 20px; }
+  margin-top: -10%;
+  padding-right: 40px; }
 
 .group_img_2 {
-  margin-top: 7%; }
+  margin-top: 6%; }
 
 .t-bold-small,
 .t-bold-medium,
-.t-bold-big {
+.t-bold-bi {
   font-family: "Neue Einstellung";
   font-weight: bold;
-  font-style: normal; }
-
-.t-small {
-  font-family: "Neue Einstellung";
-  font-weight: normal;
   font-style: normal;
-  font-size: 20px; }
+  line-height: 1.2 !important; }
 
+.t-small,
+.t-medium,
 .t-big {
   font-family: "Neue Einstellung";
   font-weight: normal;
+  line-height: 1.2 !important; }
+
+.t-small {
+  font-style: normal;
+  font-size: 18px; }
+
+.t-medium {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.2 !important; }
+
+.t-big {
   font-style: normal;
   font-size: 22px; }
 
@@ -198,14 +207,39 @@
   font-size: 22px; }
 
 .t-bold-big {
-  font-size: 24px; }
+  font-size: 24px;
+  font-family: "Neue Einstellung";
+  font-weight: bold;
+  line-height: 1.2 !important; }
+
+.t-bold-big-x2 {
+  font-size: 40px;
+  line-height: 1.1 !important;
+  font-family: "SVN-Gilroy XBold";
+  font-weight: bold; }
+
+.t-bold-big-x3 {
+  font-size: 48px;
+  line-height: 1.1 !important;
+  font-family: "SVN-Gilroy XBold";
+  font-weight: bold; }
 
 .t-bold-large {
-  font-size: 40px;
+  font-size: 64px;
   font-family: "SVN-Gilroy XBold";
   font-weight: bold;
   font-style: normal;
   line-height: 1 !important; }
+
+.t-semibold-small {
+  font-family: "Neue Einstellung";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.2 !important; }
+
+.text-center {
+  text-align: center; }
 
 .t-blue {
   color: #00337b; }
@@ -213,7 +247,8 @@
 .line {
   border-top: 1px dashed #e0e5ed;
   width: 80%;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  margin-top: 10px; }
 
 .page {
   transition: all 0.5s;
@@ -260,15 +295,19 @@
 
 .hone-voucher-container {
   color: #00337b;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   display: flex;
   justify-content: center;
   gap: 20px; }
   .hone-voucher-container p {
-    margin-bottom: 10px; }
+    margin-bottom: 3px; }
+  .hone-voucher-container .row-info-container {
+    display: flex;
+    justify-content: start;
+    flex-direction: column; }
 
 .home-voucher-item {
-  width: 433px;
+  width: 430px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -277,13 +316,16 @@
   padding: 10px 0px 0px 0;
   margin-bottom: 20px; }
 
+.hv-item-3 {
+  min-height: 105px; }
+
 .item-temp {
   position: relative;
   border-radius: 24px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) -61.08%, rgba(255, 255, 255, 0.425) 170.99%);
   box-shadow: 0px 0px 11.9px 0px rgba(255, 255, 255, 0.4) inset;
   border-bottom: 2px solid rgba(255, 255, 255, 0.705);
-  padding: 15px 10px 20px 10px; }
+  padding: 15px 17px 20px 17px; }
 
 .b-top {
   width: 100%;
@@ -297,7 +339,7 @@
 
 .b-left {
   position: absolute;
-  height: 100%;
+  height: 70%;
   width: 1.5px;
   background: rgba(255, 255, 255, 0.856);
   background: radial-gradient(circle, rgba(255, 255, 255, 0.644) 0%, rgba(255, 255, 255, 0) 90%);
@@ -305,7 +347,7 @@
 
 .b-right {
   position: absolute;
-  height: 100%;
+  height: 70%;
   width: 1.5px;
   background: rgba(255, 255, 255, 0.856);
   background: radial-gradient(circle, rgba(255, 255, 255, 0.644) 0%, rgba(255, 255, 255, 0) 90%);
@@ -382,10 +424,15 @@
     margin-bottom: 0;
     text-align: center; }
   .contact-container .info {
-    font-size: 20px; }
+    font-size: 20px;
+    font-family: "Neue Einstellung";
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    margin-bottom: 20px; }
   .contact-container .hot-line-container {
     width: fit-content;
-    padding: 12px 20px;
+    padding: 15px 20px;
     margin: 0 auto;
     border-radius: 30px;
     margin-top: 10px; }
@@ -395,7 +442,10 @@
       font-weight: bold;
       font-style: normal; }
     .contact-container .hot-line-container span {
-      font-size: 20px; }
+      font-size: 20px;
+      font-family: "Neue Einstellung";
+      font-weight: 600;
+      font-style: normal; }
 
 .dieu-kien {
   display: flex;
@@ -406,8 +456,8 @@
     background-image: url("../images/bg-5.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 15px 5px;
-    border-radius: 14px;
+    padding: 22px 5px;
+    border-radius: 10px;
     min-width: 100px;
     text-align: center; }
   .dieu-kien .dk-content {
@@ -426,9 +476,9 @@
 .voucher .slide-container {
   padding: 0 150px 100px 150px;
   text-align: center;
-  margin-top: 80px; }
+  margin-top: 100px; }
 
-.my-swiper-btn-container {
+.main-slide .my-swiper-btn-container {
   position: relative;
   width: 150px;
   margin: 0 auto; }
@@ -452,14 +502,16 @@
 .nav-main-slide {
   display: flex;
   margin: 0 auto;
-  gap: 20px;
-  justify-content: center; }
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 90px; }
   .nav-main-slide .nav-slide-item {
     cursor: pointer;
     background-image: url(../images/bg-5.png);
     background-size: cover;
-    padding: 6px 32px;
-    border-radius: 26px; }
+    padding: 1px 32px;
+    border-radius: 26px;
+    min-width: 183px; }
     .nav-main-slide .nav-slide-item p {
       margin-bottom: 0;
       font-size: 28px;
@@ -471,6 +523,14 @@
     background-image: url(../images/bg-6.png); }
     .nav-main-slide .nav-slide-item.main-slide-active-nav-item p {
       color: #00337b; }
+
+.swiper-1 {
+  padding-bottom: 50px; }
+  .swiper-1 .swiper-slide {
+    transform: scale(0.7);
+    transition: all 0.5s; }
+  .swiper-1 .swiper-slide-next {
+    transform: scale(1); }
 
 .modal-dialog {
   max-width: 980px; }
@@ -499,15 +559,28 @@
 .slide-detail-container {
   width: 100%;
   height: 400px;
-  background-image: url("../images/bg-detail.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   border-bottom-left-radius: 26px;
-  border-bottom-right-radius: 26px; }
+  border-bottom-right-radius: 26px;
+  max-width: 866px; }
 
 .title-car-container {
-  background-image: url(../images/title-car.jpg);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px; }
+  .title-car-container p {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    color: white; }
+
+.title-nav {
+  background-image: url(../images/bg-7.jpg);
   border-radius: 24px;
   width: fit-content;
   width: 220px;
@@ -515,15 +588,47 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  position: relative;
-  top: -25px;
-  z-index: 10; }
-  .title-car-container p {
-    font-size: 24px;
-    font-weight: bold;
-    font-style: normal;
-    margin: 0;
-    color: white; }
+  cursor: pointer; }
+
+.active-title-nav.title-nav {
+  background-image: url(../images/title-car.jpg); }
+
+.swiper-2 {
+  margin-top: -25px; }
+  .swiper-2 .swiper-slide {
+    background-image: url("../images/bg-detail.jpg");
+    background-position: center top 26px;
+    transition: all 0.5s;
+    background-repeat: no-repeat; }
+    .swiper-2 .swiper-slide .title-car-container {
+      visibility: hidden; }
+  .swiper-2 .swiper-slide-active .title-car-container {
+    visibility: visible; }
+
+.modal-body {
+  position: relative; }
+  .modal-body .swiper-button-next,
+  .modal-body .swiper-button-prev {
+    width: 75px;
+    height: 75px;
+    background-image: url("../images/btn-next.png");
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .modal-body .swiper-button-prev {
+    background-image: url("../images/btn-prev.png");
+    left: -35px; }
+  .modal-body .swiper-button-next {
+    right: -35px; }
+  .modal-body .swiper-button-next:after,
+  .modal-body .swiper-rtl .swiper-button-prev:after {
+    display: none; }
+  .modal-body .swiper-button-prev:after,
+  .modal-body .swiper-rtl .swiper-button-next:after {
+    display: none; }
+  .modal-body .swiper-pagination {
+    line-height: 0 !important;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
 
 /*# sourceMappingURL=main.css.map */
