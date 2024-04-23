@@ -527,10 +527,14 @@
 .swiper-1 {
   padding-bottom: 50px; }
   .swiper-1 .swiper-slide {
-    transform: scale(0.7);
-    transition: all 0.5s; }
+    transform: scale(0.65);
+    transition: all 0.7s; }
+    .swiper-1 .swiper-slide img {
+      margin-top: 0%; }
   .swiper-1 .swiper-slide-next {
     transform: scale(1); }
+    .swiper-1 .swiper-slide-next img {
+      margin-top: 0%; }
 
 .modal-dialog {
   max-width: 980px; }
@@ -558,7 +562,6 @@
 
 .slide-detail-container {
   width: 100%;
-  height: 400px;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -599,11 +602,17 @@
     background-image: url("../images/bg-detail.jpg");
     background-position: center top 26px;
     transition: all 0.5s;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    padding: 0 0 0px 0;
+    z-index: 0; }
     .swiper-2 .swiper-slide .title-car-container {
       visibility: hidden; }
-  .swiper-2 .swiper-slide-active .title-car-container {
-    visibility: visible; }
+  .swiper-2 .swiper-slide-active {
+    z-index: 1; }
+    .swiper-2 .swiper-slide-active .title-car-container {
+      visibility: visible; }
+    .swiper-2 .swiper-slide-active .content-modal-container .item-temp {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.705); }
 
 .modal-body {
   position: relative; }
@@ -630,5 +639,193 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%); }
+  .modal-body .swiper-pagination {
+    bottom: -7.5px; }
+    .modal-body .swiper-pagination .swiper-pagination-bullet {
+      width: 15px;
+      height: 15px;
+      margin-right: 15px;
+      background-color: #6b9ee5;
+      opacity: 1; }
+    .modal-body .swiper-pagination .swiper-pagination-bullet-active {
+      background-color: #00337b; }
+
+.cover-modal-container {
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 25px; }
+  .cover-modal-container .d-car {
+    width: 50%; }
+  .cover-modal-container .cover-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .cover-modal-container .cover-text .row-ele {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 25px;
+      margin-top: 5px; }
+    .cover-modal-container .cover-text .item-temp {
+      width: auto;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #00337b;
+      gap: 5px;
+      min-width: 210px;
+      padding: 10px 0px 10px 0px;
+      border-radius: 14px; }
+      .cover-modal-container .cover-text .item-temp .b-right {
+        width: 1px; }
+    .cover-modal-container .cover-text h3 {
+      font-family: "Neue Einstellung";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      color: #222222; }
+    .cover-modal-container .cover-text h2 {
+      font-size: 42.5px;
+      font-family: "Neue Einstellung";
+      font-weight: bold;
+      font-style: normal;
+      line-height: 1 !important;
+      margin-bottom: 0; }
+    .cover-modal-container .cover-text p {
+      font-family: "Neue Einstellung";
+      font-weight: bold;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 1 !important;
+      margin-bottom: 0; }
+    .cover-modal-container .cover-text h4 {
+      font-family: "Neue Einstellung";
+      font-weight: 600;
+      font-style: normal;
+      font-size: 18px; }
+    .cover-modal-container .cover-text h5 {
+      font-family: "Neue Einstellung";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 18px; }
+
+.content-modal-container {
+  display: flex;
+  gap: 5px; }
+  .content-modal-container h3,
+  .content-modal-container h5,
+  .content-modal-container h4 {
+    margin-bottom: 0; }
+  .content-modal-container .item-temp {
+    flex-grow: 1;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    width: calc(50% - 5px);
+    border-bottom: 0px solid rgba(255, 255, 255, 0.705); }
+    .content-modal-container .item-temp .b-left {
+      width: 2px;
+      left: 0px; }
+  .content-modal-container .content-title {
+    font-family: "Neue Einstellung";
+    display: flex;
+    gap: 10px;
+    align-items: center; }
+    .content-modal-container .content-title p {
+      font-weight: normal;
+      font-style: normal;
+      font-size: 17px;
+      margin-bottom: 0;
+      line-height: 1 !important; }
+    .content-modal-container .content-title h2 {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 0;
+      line-height: 1.2 !important; }
+  .content-modal-container .item-line {
+    width: 86%;
+    height: 1px;
+    background-image: url(../images/bg-line.png);
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  .content-modal-container .item-line-2 {
+    margin-top: 23px; }
+  .content-modal-container .big-row {
+    display: flex;
+    gap: 5px; }
+    .content-modal-container .big-row .number-row {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-family: "Neue Einstellung"; }
+      .content-modal-container .big-row .number-row .item-temp {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+        padding: 2.5px 5px;
+        align-items: center;
+        gap: 5px;
+        border-radius: 12px;
+        min-width: 177px;
+        color: #00337b;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.705); }
+        .content-modal-container .big-row .number-row .item-temp h3 {
+          font-size: 30px;
+          font-weight: bold;
+          font-style: normal;
+          line-height: 1 !important; }
+        .content-modal-container .big-row .number-row .item-temp h5 {
+          font-size: 16px;
+          font-weight: bold;
+          font-style: normal; }
+      .content-modal-container .big-row .number-row .item-temp.item-col {
+        flex-direction: column;
+        gap: 0;
+        min-height: 60.5px;
+        align-items: center;
+        justify-content: center; }
+        .content-modal-container .big-row .number-row .item-temp.item-col h3 {
+          font-size: 35px; }
+        .content-modal-container .big-row .number-row .item-temp.item-col h5 {
+          font-weight: normal; }
+      .content-modal-container .big-row .number-row h4 {
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        color: #222222;
+        min-height: 43px;
+        display: flex;
+        align-items: center; }
+  .content-modal-container .tra-thang .big-row .number-row h4 {
+    text-align: center;
+    justify-content: center; }
+  .content-modal-container .tra-thang .big-row .number-row .item-temp {
+    min-width: 140px;
+    gap: 0;
+    padding: 4.5px 5px; }
+  .content-modal-container .tra-thang .big-row {
+    gap: 70px; }
+  .content-modal-container .tra-thang h6 {
+    font-family: "Neue Einstellung";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 0;
+    text-align: center;
+    color: #00337b; }
+  .content-modal-container .my-col {
+    flex-direction: column !important; }
+
+.page-modal {
+  display: none; }
+
+.page-modal.page-modal-active {
+  display: block; }
 
 /*# sourceMappingURL=main.css.map */
