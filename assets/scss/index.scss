@@ -627,7 +627,7 @@
     .swiper-slide {
         background-image: url("../images/bg-detail.jpg");
         background-position: center top 26px;
-        transition: all 0.2s;
+        transition: all 0.5s;
         background-repeat: no-repeat;
         .title-car-container {
             visibility: hidden;
@@ -807,9 +807,10 @@
         p {
             font-weight: normal;
             font-style: normal;
-            font-size: 17px;
+            font-size: 16px;
             margin-bottom: 0;
             line-height: 1 !important;
+            font-family: "SVN-Gilroy";
         }
         h2 {
             font-weight: bold;
@@ -922,7 +923,7 @@
     display: block;
 }
 .modal-note {
-    font-family: "Neue Einstellung";
+    font-family: "SVN-Gilroy";
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
@@ -1279,6 +1280,7 @@
         .group_img_2 {
             width: 100%;
             margin-top: 25%;
+            z-index: 2;
         }
         .img-11 {
             width: 100%;
@@ -1393,7 +1395,7 @@
         // overflow: visible;
 
         .swiper-slide {
-            transition: all 0s;
+            transition: all 0.2s;
         }
     }
 
@@ -1441,6 +1443,37 @@
         .title {
             font-size: 31px;
         }
+    }
+
+    .close-mobile {
+        display: flex !important;
+        gap: 5px;
+        position: relative;
+        top: -5px;
+        left: -3px;
+        z-index: 10;
+        p {
+            font-size: 16px;
+            color: white;
+            line-height: 1.1;
+            margin-bottom: 0;
+            display: block;
+            font-family: "Neue Einstellung";
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        i {
+            display: block;
+            color: white;
+            font-size: 18px;
+        }
+    }
+    .modal-header {
+        justify-content: end;
+    }
+    .title-car-container .title-nav {
+        width: 129px;
     }
 }
 
@@ -1507,7 +1540,7 @@
             font-size: 30.5px;
         }
         .item-temp {
-            min-width: 150px;
+            min-width: 165px;
         }
         h4 {
             font-size: 16px;
@@ -1520,11 +1553,139 @@
         padding-top: 5px;
         height: 70vh;
     }
+    .modal-body .swiper-button-next {
+        bottom: -24px;
+        top: inherit;
+    }
+    .modal-body .swiper-button-prev {
+        bottom: -24px;
+        top: inherit;
+    }
+    .modal-note {
+        font-size: 14px;
+    }
 }
-
+.topbar.nav-up {
+    transform: translateY(0%);
+}
 @media (max-width: 430px) {
     .my-modal-container {
         padding-top: 5px;
-        height: 75vh;
+        height: 70vh;
+    }
+    .content-modal-container .big-row .number-row .item-temp {
+        justify-content: center;
+    }
+    .cover-modal-container .cover-text h3 {
+        margin-bottom: 0;
+    }
+    .nav-container .item-container .item-nav p {
+        line-height: 1.1;
+        font-size: 14px;
+    }
+    .modal-dialog {
+        margin: 0px 0;
+    }
+}
+@media (max-width: 414px) {
+    .my-modal-container {
+        padding-top: 5px;
+        height: 65vh;
+    }
+    .container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .content-modal-container .content-title h2 {
+        font-size: 20px;
+    }
+
+    .content-modal-container {
+        .big-row {
+            .number-row {
+                .item-temp.item-col {
+                    h3 {
+                        font-size: 30px;
+                    }
+                }
+                .item-temp {
+                    h3 {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .title-car-container .title-nav {
+        width: 122px;
+        height: 35px;
+    }
+    .modal-body .swiper-button-next {
+        right: -2px;
+    }
+    .bg-mobile {
+        background-position: right bottom -68%;
+    }
+    .bg-bottom-mobile {
+        padding-bottom: 200px;
+    }
+    .content-modal-container .big-row .number-row .item-temp h5 {
+        font-size: 14px;
+    }
+    .content-modal-container .big-row .number-row h4 {
+        font-size: 17px;
+    }
+    // .modal-dialog {
+    //     margin: 15px 0;
+    // }
+    .swiper-1 {
+        padding-bottom: 57px;
+    }
+}
+
+@media (max-width: 390px) {
+    .content-modal-container .content-title {
+        gap: 5px;
+        flex-direction: column;
+    }
+    .content-modal-container .big-row .number-row .item-temp {
+        min-width: 158px;
+    }
+    .cover-modal-container .cover-text .item-temp {
+        min-width: 152px;
+    }
+    .cover-modal-container .cover-text h2 {
+        font-size: 25.5px;
+    }
+    .title-container .title {
+        font-size: 25px;
+    }
+    .content-modal-container .tra-thang .big-row {
+        gap: 43px;
+    }
+    .content-modal-container .tra-thang h6 {
+        font-size: 18px;
+    }
+    .modal-note {
+        font-size: 13px;
+
+        margin-top: 25px;
+    }
+    .modal-body .swiper-pagination .swiper-pagination-bullet {
+        margin-right: 11px;
+    }
+}
+@media (max-width: 375px) {
+    .cover-modal-container .cover-text .item-temp {
+        min-width: 140px;
+    }
+    .cover-modal-container .cover-text h2 {
+        font-size: 23.5px;
+    }
+    .title-car-container .title-nav {
+        width: 110px;
+    }
+    .voucher .title {
+        font-size: 19px;
     }
 }
