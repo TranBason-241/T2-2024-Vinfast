@@ -430,7 +430,15 @@
   .hone-voucher-container .row-info-container {
     display: flex;
     justify-content: start;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
+
+.row-info-container .row-info {
+  min-width: 250px; }
+
+.hv-item-2,
+.hv-item-1 {
+  min-height: 263px; }
 
 .home-voucher-item {
   width: 430px;
@@ -978,6 +986,9 @@
   .modal-note p {
     margin-bottom: 0; }
 
+.note-sale {
+  margin-top: 8px; }
+
 @media (max-width: 1600px) {
   .nav-container .usage {
     flex-direction: column;
@@ -1218,7 +1229,11 @@
     width: 95%; }
 
   .title-container .title {
-    font-size: 41px; } }
+    font-size: 41px; }
+
+  .hv-item-2,
+  .hv-item-1 {
+    min-height: 280px; } }
 @media (min-width: 577px) {
   .pc {
     display: block !important; }
@@ -1518,6 +1533,9 @@
   .modal-dialog {
     margin: 0px 0; } }
 @media (max-width: 414px) {
+  .note-sale p {
+    font-size: 17px; }
+
   .my-modal-container {
     padding-top: 5px;
     height: 65vh; }
